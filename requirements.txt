@@ -1,0 +1,19 @@
+# RAG pipeline: PDF parsing (PyMuPDF + Docling) + FAISS + OpenAI + Streamlit UI
+
+# PDF parsing — both supported, choose via --parser flag or UI dropdown
+pymupdf        # parser=pymupdf: fast (~1.7s for 646 pages), no ML, no crashes
+docling        # parser=docling: uses docling_parse C++ engine (~22s), no ML crash
+
+# FAISS vector index (pre-built binary wheel; no swig/C++ compiler needed)
+faiss-cpu
+numpy
+
+# LLM and embeddings (OpenAI)
+openai
+python-dotenv
+
+# Web UI
+streamlit
+
+# Tests
+pytest

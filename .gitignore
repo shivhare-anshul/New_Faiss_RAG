@@ -1,0 +1,19 @@
+# Do not commit secrets or local env
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+*.egg-info/
+.eggs/
+
+# Generated / cached data (do not push)
+data/faiss_index/
+data/parsed_output/
